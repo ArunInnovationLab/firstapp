@@ -8,6 +8,7 @@ import DisplayDessertsList from "./components/DessertsList";
 import ToDos from "./components/ToDos";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SideEffect from "./components/SideEffect";
+import FetchAPI from "./components/FetchAPI";
 
 function App() {
   return (
@@ -50,7 +51,10 @@ function App() {
               <Link to="/to-do">To Do</Link>
             </li>
             <li>
-              <Link to="side-effect"> Use Effect</Link>
+              <Link to="/side-effect"> Use Effect</Link>
+            </li>
+            <li>
+              <Link to="fetch">Fetch</Link>
             </li>
           </ol>
         </nav>
@@ -65,6 +69,7 @@ function App() {
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/to-do" element={<ToDos />} />
             <Route path="/side-effect" element={<SideEffect />} />
+            <Route path="fetch" element={<FetchAPI/>}/>
           </Routes>
         </main>
       </div>
