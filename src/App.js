@@ -1,24 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./components/Form";
+import FeedbackForm from "./components/FeedbackForm";
+import SignUp from "./components/SignUpForm";
+import Goals from "./components/Goals";
+import GiftcardPage from "./components/GiftcardPage";
+import DisplayDessertsList from "./components/DessertsList";
+import ToDos from "./components/ToDos";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div>
+    //   {/* <Form/> */}
+    //   {/* <FeedbackForm/> */}
+    //   {/* <SignUp/> */}
+    //   {/* <Goals/> */}
+    //   {/* <GiftcardPage/> */}
+    //   {/* <FeedbackForm/> */}
+    //   {/* <DisplayDessertsList/> */}
+
+    //   <ToDos />
+    // </div>
+    <Router>
+      <div>
+        <nav>
+          <ol>
+            <li>
+              <Link to="/form">Form</Link>
+            </li>
+
+            <li>
+              <Link to="/desserts-list">Desserts</Link>
+            </li>
+
+            <li>
+              <Link to="/feedback-form">Feedback</Link>
+            </li>
+            <li>
+              <Link to="/giftcard-page">Claim Gift Card</Link>
+            </li>
+            <li>
+              <Link to="/goals">Goals</Link>
+            </li>
+            <li>
+              <Link to="/sign-up">Sign Up</Link>
+            </li>
+            <li>
+              <Link to="/to-do">To Do</Link>
+            </li>
+          </ol>
+        </nav>
+
+        <main>
+          <Routes>
+            <Route path="/form" element={<Form />} />
+            <Route path="/desserts-list" element={<DisplayDessertsList />} />
+            <Route path="/giftcard-page" element={<GiftcardPage />} />
+            <Route path="/feedback-form" element={<FeedbackForm />} />
+            <Route path="/goals" element={<Goals />} />
+            <Route path="/sign-up" element={<SignUp />} />
+            <Route path="/to-do" element={<ToDos />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
