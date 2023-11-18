@@ -7,6 +7,7 @@ import GiftcardPage from "./components/GiftcardPage";
 import DisplayDessertsList from "./components/DessertsList";
 import ToDos from "./components/ToDos";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import SideEffect from "./components/SideEffect";
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
             <li>
               <Link to="/to-do">To Do</Link>
             </li>
+            <li>
+              <Link to="side-effect"> Use Effect</Link>
+            </li>
           </ol>
         </nav>
 
@@ -60,6 +64,7 @@ function App() {
             <Route path="/goals" element={<Goals />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/to-do" element={<ToDos />} />
+            <Route path="/side-effect" element={<SideEffect />} />
           </Routes>
         </main>
       </div>
