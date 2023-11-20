@@ -9,7 +9,8 @@ import ToDos from "./components/ToDos";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SideEffect from "./components/SideEffect";
 import FetchAPI from "./components/FetchAPI";
-import ReducerDemo from "./components/ReducerHook";
+import ReducerDemo from "./components/ReducerHookDemo";
+import UseRefDemo from "./components/UseRefDemo";
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
             <li>
               <Link to="reducer">Reducer</Link>
             </li>
+            <li>
+              <Link to="use-ref">UseRef</Link>
+            </li>
           </ol>
         </nav>
 
@@ -73,8 +77,9 @@ function App() {
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/to-do" element={<ToDos />} />
             <Route path="/side-effect" element={<SideEffect />} />
-            <Route path="fetch" element={<FetchAPI/>}/>
-            <Route path="/reducer" element={<ReducerDemo/>}/>
+            <Route path="fetch" element={<FetchAPI />} />
+            <Route path="/reducer" element={<ReducerDemo />} />
+            <Route path="/use-ref" element={<UseRefDemo />} />
           </Routes>
         </main>
       </div>
