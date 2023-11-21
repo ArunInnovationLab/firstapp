@@ -15,17 +15,6 @@ import RandomUser from "./components/FetchData";
 
 function App() {
   return (
-    // <div>
-    //   {/* <Form/> */}
-    //   {/* <FeedbackForm/> */}
-    //   {/* <SignUp/> */}
-    //   {/* <Goals/> */}
-    //   {/* <GiftcardPage/> */}
-    //   {/* <FeedbackForm/> */}
-    //   {/* <DisplayDessertsList/> */}
-
-    //   <ToDos />
-    // </div>
     <Router>
       <div>
         <nav>
