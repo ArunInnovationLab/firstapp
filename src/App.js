@@ -11,6 +11,7 @@ import SideEffect from "./components/SideEffect";
 import FetchAPI from "./components/FetchAPI";
 import ReducerDemo from "./components/ReducerHookDemo";
 import UseRefDemo from "./components/UseRefDemo";
+import RandomUser from "./components/FetchData";
 
 function App() {
   return (
@@ -64,6 +65,9 @@ function App() {
             <li>
               <Link to="use-ref">UseRef</Link>
             </li>
+            <li>
+              <Link to="fetch-data">Fetch Data</Link>
+            </li>
           </ol>
         </nav>
 
@@ -80,6 +84,7 @@ function App() {
             <Route path="fetch" element={<FetchAPI />} />
             <Route path="/reducer" element={<ReducerDemo />} />
             <Route path="/use-ref" element={<UseRefDemo />} />
+            <Route path="/fetch-data" element={<RandomUser />} />
           </Routes>
         </main>
       </div>
