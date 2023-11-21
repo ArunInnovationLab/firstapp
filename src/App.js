@@ -12,6 +12,7 @@ import FetchAPI from "./components/FetchAPI";
 import ReducerDemo from "./components/ReducerHookDemo";
 import UseRefDemo from "./components/UseRefDemo";
 import RandomUser from "./components/FetchData";
+import UseCustomHook from "./components/UseCustomHooks";
 
 function App() {
   return (
@@ -57,6 +58,10 @@ function App() {
             <li>
               <Link to="fetch-data">Fetch Data</Link>
             </li>
+
+            <li>
+              <Link to="use-custom-hook">Use custom hook</Link>
+            </li>
           </ol>
         </nav>
 
@@ -74,6 +79,7 @@ function App() {
             <Route path="/reducer" element={<ReducerDemo />} />
             <Route path="/use-ref" element={<UseRefDemo />} />
             <Route path="/fetch-data" element={<RandomUser />} />
+            <Route path="/use-custom-hook" element={<UseCustomHook/>}/>
           </Routes>
         </main>
       </div>
