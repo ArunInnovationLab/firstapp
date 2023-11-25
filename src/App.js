@@ -17,6 +17,7 @@ import DialogBox from "./jsx/DialogBox";
 import { Toaster } from "react-hot-toast";
 import RadioGroupComponent from "./jsx/RadioGroup";
 import LiveOrders from "./jsx/DynamicManipulation";
+import ButtonComponent from "./jsx/SpreadOperator";
 
 function App() {
   return (
@@ -77,6 +78,9 @@ function App() {
               <li>
                 <Link to="live-orders">Live Orders</Link>
               </li>
+              <li>
+                <Link to="buttons">Buttons</Link>
+              </li>
             </ol>
           </nav>
 
@@ -98,6 +102,7 @@ function App() {
               <Route path="/dialog-box" element={<DialogBox />} />
               <Route path="/radio-group" element={<RadioGroupComponent />} />
               <Route path="/live-orders" element={<LiveOrders />} />
+              <Route path="/buttons" element={<ButtonComponent />} />
             </Routes>
           </main>
         </div>
