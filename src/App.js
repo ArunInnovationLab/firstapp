@@ -15,14 +15,13 @@ import RandomUser from "./components/FetchData";
 import UseCustomHook from "./components/UseCustomHooks";
 import DialogBox from "./jsx/DialogBox";
 import { Toaster } from "react-hot-toast";
+import RadioGroupComponent from "./jsx/RadioGroup";
+import LiveOrders from "./jsx/DynamicManipulation";
 
 function App() {
   return (
     <>
-      <Toaster 
-       position="top-right"
-       reverseOrder={false}
-      />
+      <Toaster position="top-right" reverseOrder={false} />
       <Router>
         <div>
           <nav>
@@ -72,6 +71,12 @@ function App() {
               <li>
                 <Link to="dialog-box">Dialog Box</Link>
               </li>
+              <li>
+                <Link to="radio-group">Radio Group</Link>
+              </li>
+              <li>
+                <Link to="live-orders">Live Orders</Link>
+              </li>
             </ol>
           </nav>
 
@@ -91,6 +96,8 @@ function App() {
               <Route path="/fetch-data" element={<RandomUser />} />
               <Route path="/use-custom-hook" element={<UseCustomHook />} />
               <Route path="/dialog-box" element={<DialogBox />} />
+              <Route path="/radio-group" element={<RadioGroupComponent />} />
+              <Route path="/live-orders" element={<LiveOrders />} />
             </Routes>
           </main>
         </div>

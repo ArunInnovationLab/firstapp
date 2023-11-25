@@ -25,7 +25,7 @@ const DeleteButton = () => {
   return (
     <Button
       onClick={() => {
-        toast.success("Deleted successfully ");
+        toast.success("Deleted successfully");
       }}
       backgroundColor="red"
     >
