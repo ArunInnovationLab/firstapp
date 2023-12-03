@@ -19,6 +19,7 @@ import RadioGroupComponent from "./jsx/RadioGroup";
 import LiveOrders from "./jsx/DynamicManipulation";
 import ButtonComponent from "./jsx/SpreadOperator";
 import HoC from "./jsx/HoC";
+import RenderProps from "./jsx/RenderProps";
 
 function App() {
   return (
@@ -85,6 +86,9 @@ function App() {
               <li>
                 <Link to="mouse-tracking">Mouse tracking</Link>
               </li>
+              <li>
+                <Link to="render-props">Render Props</Link>
+              </li>
             </ol>
           </nav>
 
@@ -107,7 +111,8 @@ function App() {
               <Route path="/radio-group" element={<RadioGroupComponent />} />
               <Route path="/live-orders" element={<LiveOrders />} />
               <Route path="/buttons" element={<ButtonComponent />} />
-              <Route path="/mouse-tracking" element={<HoC/>}/>
+              <Route path="/mouse-tracking" element={<HoC />} />
+              <Route path="render-props" element={<RenderProps />} />
             </Routes>
           </main>
         </div>

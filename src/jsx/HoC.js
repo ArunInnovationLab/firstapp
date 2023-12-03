@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-const withMousePosiution = (WrappedComponent) => {
+const withMousePosition = (WrappedComponent) => {
   return (props) => {
     const [MousePosition, setMousePosition] = useState({
       x: 0,
@@ -61,8 +61,8 @@ const PointMouseLogger = ({ mousePosition }) => {
   );
 };
 
-const PanelMouseTracker = withMousePosiution(PanelMouseLogger);
-const PointMouseTracker = withMousePosiution(PointMouseLogger);
+const PanelMouseTracker = withMousePosition(PanelMouseLogger);
+const PointMouseTracker = withMousePosition(PointMouseLogger);
 
 function HoC() {
   return (

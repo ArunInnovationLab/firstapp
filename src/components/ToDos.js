@@ -33,7 +33,7 @@ export default function ToDos() {
 
   useEffect(()=>{
     document.title = "Todo"
-  })
+  },[])
 
   return (
     <div>
