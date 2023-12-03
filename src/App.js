@@ -20,6 +20,7 @@ import LiveOrders from "./jsx/DynamicManipulation";
 import ButtonComponent from "./jsx/SpreadOperator";
 import HoC from "./jsx/HoC";
 import RenderProps from "./jsx/RenderProps";
+import MousePositionRenderProps from "./jsx/MousePositionRenderProps";
 
 function App() {
   return (
@@ -89,6 +90,9 @@ function App() {
               <li>
                 <Link to="render-props">Render Props</Link>
               </li>
+              <li>
+                <Link to="MousePositionRenderProps">MousePositionRenderProps</Link>
+              </li>
             </ol>
           </nav>
 
@@ -112,7 +116,8 @@ function App() {
               <Route path="/live-orders" element={<LiveOrders />} />
               <Route path="/buttons" element={<ButtonComponent />} />
               <Route path="/mouse-tracking" element={<HoC />} />
-              <Route path="render-props" element={<RenderProps />} />
+              <Route path="/render-props" element={<RenderProps />} />
+              <Route path="/MousePositionRenderProps" element={<MousePositionRenderProps/>}/>
             </Routes>
           </main>
         </div>
